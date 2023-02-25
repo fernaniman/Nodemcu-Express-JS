@@ -12,7 +12,7 @@ app.set('views',path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 
 // memanggil folder assets
-app.use('/assets',express.static(path.join(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, 'assets')));
 
 
 app.use('/', appRouting);
